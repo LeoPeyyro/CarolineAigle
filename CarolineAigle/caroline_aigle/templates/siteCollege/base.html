@@ -1,0 +1,51 @@
+{% load static %}
+<html lang="fr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collège Caroline Aigle</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'siteCollege/styles.css' %}" />
+</head>
+<body>
+    <nav>
+        <img src="logoca.png" width="100px" height="80px">
+        <h1>Caroline Aigle</h1>
+        <div class="onglets">
+            <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\index.html">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="https://cas.monbureaunumerique.fr/login?service=https%3A%2F%2Fwww.monbureaunumerique.fr%2Fsg.do%3FPROC%3DIDENTIFICATION_FRONT">Accès à l'ENT</a>
+            <a href="#contact">Contact</a>
+            <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\actions.html">Actions</a>
+            <div class="dropdown">
+                <button class="dropbtn">Parcours
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\unss.html">Parcours Avenir</a>
+                    <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\unss.html">Parcours de Santé</a>
+                    <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\unss.html">Parcours d'éducation Artistique et Culturelle</a>
+                    <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\unss.html">Parcours Citoyen</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Actualités
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\unss.html">UNSS</a>
+                    <a href="C:\Users\Omen by HP\Documents\La_Nouvelle_Plume_-_Numero_8_-_Sept_Oct_Nov_2022_1.pdf" download="La_Nouvelle_Plume_-_Numero_8_-_Sept_Oct_Nov_2022_1.pdf">Journal - La Nouvelle Plume</a>
+                    <a href="https://twitter.com/college_c_aigle">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Caroline Aigle</h1>
+        <h4>collège public</h4>
+        <a href="C:\Users\Omen by HP\Documents\La_Nouvelle_Plume_-_Numero_8_-_Sept_Oct_Nov_2022_1.pdf" download="La_Nouvelle_Plume_-_Numero_8_-_Sept_Oct_Nov_2022_1.pdf">
+            <button>Parcourir</button>
+        </a>
+
+    </header>
+{% block content %}{% endblock %}
