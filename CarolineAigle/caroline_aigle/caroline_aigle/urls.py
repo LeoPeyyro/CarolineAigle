@@ -19,5 +19,11 @@ from siteCollege import views
 
 urlpatterns = [
 path('admin/', admin.site.urls),
-path('index/', views.index)
+path('index/', views.index, name='index'),
+path('actions/', views.actions, name='actions'),
+path('unss/', views.unss, name='unss'),
+path('p_avenir/', views.p_avenir, name='p_avenir'),
+path('p_citoyen/', views.p_citoyen, name='p_citoyen'),
+path('p_edu_art_cult/', views.p_edu_art_cult, name='p_edu_art_cult'),
+path('p_sante/', views.p_sante, name='p_sante')
 ]

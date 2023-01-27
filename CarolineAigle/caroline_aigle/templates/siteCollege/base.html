@@ -11,20 +11,22 @@
         <img src="{% static 'siteCollege/logoca.png' %}" width="100px" height="80px">
         <h1>Caroline Aigle</h1>
         <div class="onglets">
-            <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\index.html">Accueil</a>
+            <a href="{% url 'index' %}">Accueil</a>
+            <!--Voir si on garde vraiment à propos dans la barre de navigation-->
             <a href="#apropos">À propos</a>
             <a href="https://cas.monbureaunumerique.fr/login?service=https%3A%2F%2Fwww.monbureaunumerique.fr%2Fsg.do%3FPROC%3DIDENTIFICATION_FRONT">Accès à l'ENT</a>
+            <!--Voir si on garde contact dans la barre de navigation et si on la renvoie à en bas de la page-->
             <a href="#contact">Contact</a>
-            <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\actions.html">Actions</a>
+            <a href="{% url 'actions' %}">Actions</a>
             <div class="dropdown">
                 <button class="dropbtn">Parcours
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\unss.html">Parcours Avenir</a>
-                    <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\unss.html">Parcours de Santé</a>
-                    <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\unss.html">Parcours d'éducation Artistique et Culturelle</a>
-                    <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\unss.html">Parcours Citoyen</a>
+                    <a href="{% url 'p_avenir' %}">Parcours Avenir</a>
+                    <a href="{% url 'p_sante' %}">Parcours de Santé</a>
+                    <a href="{% url 'p_edu_art_cult' %}">Parcours d'éducation Artistique et Culturelle</a>
+                    <a href="{% url 'p_citoyen' %}">Parcours Citoyen</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -32,8 +34,8 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="C:\Users\Omen by HP\Desktop\GIT_projects\CarolineAigle\CarolineAigle\unss.html">UNSS</a>
-                    <a href="C:\Users\Omen by HP\Documents\La_Nouvelle_Plume_-_Numero_8_-_Sept_Oct_Nov_2022_1.pdf" download="La_Nouvelle_Plume_-_Numero_8_-_Sept_Oct_Nov_2022_1.pdf">Journal - La Nouvelle Plume</a>
+                    <a href="{% url 'unss' %}">UNSS</a>
+                    <a href="{% static 'siteCollege/La_Nouvelle_Plume_-_Numero_8_-_Sept_Oct_Nov_2022_1.pdf' %}" download="La_Nouvelle_Plume_-_Numero_8_-_Sept_Oct_Nov_2022_1.pdf">Journal - La Nouvelle Plume</a>
                     <a href="https://twitter.com/college_c_aigle">Twitter</a>
                 </div>
             </div>
