@@ -186,7 +186,7 @@ footer #piedsDePage{
   display: block;
 }
 
-.card-column {
+.cards-column {
   width: 50%;
   float: left;
   padding: 4%;
@@ -197,7 +197,7 @@ footer #piedsDePage{
   padding-top: 100px;
 }
 
-.card {
+.cards {
   width: 92%;
   max-width: 340px;
   margin-left: auto;
@@ -220,31 +220,31 @@ footer #piedsDePage{
   top: -6px;
 }
 
-.card h1 {
+.cards h1 {
   position: relative;
   padding: 190px 0px 100px 10px;
   width: 90%;
 }
 
-.card > img {
+.cards > img {
   width: 90%;
   position: absolute;
   top: -6%;
   left: -6%;
 }
 
-.card-color-0 {
+.cards-color-0 {
   background-color: #EB5160;
 }
 
-.card-color-1 {
+.cards-color-1 {
   background-color: #8F3985;
 }
 
-.card-color-2 {
+.cards-color-2 {
   background-color: #8DAA91;
 }
 
-.card-color-3 {
+.cards-color-3 {
   background-color: #888DA7;
 }
